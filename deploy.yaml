@@ -1,0 +1,11 @@
+networks:
+  strudel:
+    driver: overlay
+
+services:
+  strudel:
+    image: grid.tdns/strudel
+    ports:
+      - '4321:4321'
+    networks:
+      - strudel
