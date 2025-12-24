@@ -5,6 +5,9 @@ networks:
 services:
   strudel:
     image: grid.tdns/strudel
+    build:
+      context: ./services/strudel
+      dockerfile: Dockerfile
     ports:
       - '4321:4321'
     networks:
