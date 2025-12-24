@@ -8,7 +8,9 @@ services:
     build:
       context: ./services/strudel
       dockerfile: Dockerfile
-    ports:
-      - '4321:4321'
+    # ports:
+    #   - '4321:4321'
+    expose:
+      - '4321'
     networks:
       - strudel
