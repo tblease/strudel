@@ -136,6 +136,9 @@ export default defineConfig({
   base,
   vite: {
     plugins: [bundleAudioWorkletPlugin()],
+    server: {
+      allowedHosts: ['.tp'],
+    },
     ssr: {
       // Example: Force a broken package to skip SSR processing, if needed
       // external: ['fraction.js'], // https://github.com/infusion/Fraction.js/issues/51
